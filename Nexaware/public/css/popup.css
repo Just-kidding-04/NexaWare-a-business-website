@@ -1,0 +1,36 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.popup-box {
+  background: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.popup-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+

@@ -1,0 +1,47 @@
+body {
+  font-family: "Segoe UI", Arial;
+  margin: 0;
+  background: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #f8fafc;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.toast.success {
+  background: #16a34a;
+}
+
+.toast.error {
+  background: #dc2626;
+}

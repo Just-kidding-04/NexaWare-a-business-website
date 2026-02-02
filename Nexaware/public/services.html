@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaWare | Our Services</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/popup.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header>
+  <a href="index.html"><h1>NexaWare</h1></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#hero1">Services</a>
+    <a href="#contact">About</a>
+    <a onclick="openLogin()">Login</a>
+  </nav>
+</header>
+
+<!-- ===== REQUIRED ELEMENTS FOR AUTH ===== -->
+
+<div id="toast" class="toast"></div>
+
+<!-- LOGIN POPUP -->
+<div id="loginPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span class="close" onclick="closeLogin()">×</span>
+
+    <h3>Login</h3>
+
+    <input id="lemail" placeholder="Email">
+    <input id="lpassword" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- REGISTER POPUP -->
+<div id="registerPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span class="close" onclick="closeRegister()">×</span>
+
+    <h3>Create Account</h3>
+
+    <input id="rname" placeholder="Name">
+    <input id="remail" placeholder="Email">
+    <input id="rpassword" type="password" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+
+<section class="hero1" id="hero1">
+  <h2>Our Services</h2>
+  <p>
+    NexaWare delivers comprehensive business, technology, and customer support services
+    designed to help organizations adapt, innovate, and grow in a digital-first world.
+  </p>
+</section>
+
+<section class="services" id="services">
+
+  <div class="service">
+    <h3>Business Consultation Services</h3>
+    <p>We help organizations analyze challenges, optimize workflows, and align strategies with business goals.</p>
+    <p>Our experts work closely with leadership teams to drive measurable and sustainable growth.</p>
+  </div>
+
+  <div class="service">
+    <h3>IT & Digital Solutions</h3>
+    <p>We design scalable, secure, and modern digital solutions that transform business operations.</p>
+    <p>From software development to cloud solutions, we enable innovation and efficiency.</p>
+  </div>
+
+  <div class="service">
+    <h3>Customer Care Services</h3>
+    <p>We build structured customer support systems that improve satisfaction and service quality.</p>
+    <p>Our solutions focus on responsiveness, reliability, and long-term customer relationships.</p>
+  </div>
+
+</section>
+
+<section class="cta" id="contact">
+  <h2>Start Your Journey with NexaWare</h2>
+  <p>
+    Partner with NexaWare for expert consultation, innovative IT solutions,
+    and reliable customer care services.
+  </p>
+  <a href="#" id="openEnquiry">Send an Enquiry</a>
+</section>
+
+<!-- ===== Modal Template ===== -->
+<template id="model-template">
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <span class="close-btn">&times;</span>
+
+      <h2>Service Enquiry</h2>
+
+      <form>
+        <input placeholder="First Name" required>
+        <input placeholder="Last Name" required>
+        <input type="email" placeholder="Email" required>
+        <input placeholder="Phone" required>
+
+        <select required>
+          <option value="">Select Service</option>
+          <option>Business Consultation</option>
+          <option>IT & Digital Solutions</option>
+          <option>Customer Care Services</option>
+        </select>
+
+        <textarea placeholder="Message"></textarea>
+
+        <button class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</template>
+
+<footer>
+  © 2026 NexaWare. All Rights Reserved.
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="js/services.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

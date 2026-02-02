@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="nx-layout">
+
+  <!-- SIDEBAR -->
+  <div class="nx-sidebar">
+
+      <h2 class="nx-brand">NexaWare</h2>
+
+      <div class="nx-menu">
+          <button onclick="showSection('home')">Home</button>
+          <button onclick="showSection('orders')">Orders</button>
+          <button onclick="showSection('purchase')">Purchase</button>
+          <button class="nx-logout" onclick="logout()">Logout</button>
+      </div>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="nx-main">
+
+      <!-- WELCOME -->
+      <div id="home" class="nx-section nx-home-center">
+          <h1 id="nxBigWelcome"></h1>
+          <p class="nx-tagline">
+            Manage all your services easily from one powerful dashboard
+          </p>
+      </div>
+
+      <!-- ORDERS -->
+      <div id="orders" class="nx-section" style="display:none">
+          <h2>Your Orders</h2>
+          <div id="ordersList" class="nx-orders-grid"></div>
+      </div>
+
+      <!-- PURCHASE / UPDATE FORM -->
+      <div id="purchase" class="nx-section" style="display:none">
+
+          <h2 id="formTitle">Purchase New Service</h2>
+
+          <div class="nx-purchase-box">
+
+              <select id="service">
+                  <option>Website Development</option>
+                  <option>Mobile App Development</option>
+                  <option>SEO Package</option>
+                  <option>Digital Marketing</option>
+                  <option>Customer Service</option>
+                  <option>Business Assistance</option>
+              </select>
+
+              <input id="duration" placeholder="Duration (days)">
+              <input id="people" placeholder="Number of People Needed To Complete">
+
+              <button onclick="purchase()" id="actionBtn">
+                Confirm Purchase
+              </button>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+<script src="/js/dashboard.js"></script>
+
+</body>
+</html>
+
+
+

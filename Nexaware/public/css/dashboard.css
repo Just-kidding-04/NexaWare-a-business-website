@@ -1,0 +1,140 @@
+.nx-layout {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", Arial;
+}
+
+/* SIDEBAR */
+.nx-sidebar {
+  width: 260px;
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nx-brand {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nx-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.nx-menu button {
+  padding: 14px;
+  border: none;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.nx-menu button:hover {
+  background: #2563eb;
+}
+
+.nx-logout {
+  background: #b91c1c !important;
+}
+
+/* MAIN */
+.nx-main {
+  flex: 1;
+  padding: 40px;
+  background: #f8fafc;
+}
+
+/* CENTER WELCOME */
+.nx-home-center {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nx-home-center h1 {
+  font-size: 48px;
+}
+
+/* ORDERS */
+.nx-orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.nx-order-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+.nx-order-card button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nx-order-card .update {
+  background: #2563eb;
+  color: white;
+}
+
+.nx-order-card .delete {
+  background: #dc2626;
+  color: white;
+}
+
+/* PURCHASE */
+.nx-purchase-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nx-purchase-box input,
+.nx-purchase-box select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.nx-purchase-box button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+  background: #16a34a;
+}
+
+.toast.show {
+  opacity: 1;
+}

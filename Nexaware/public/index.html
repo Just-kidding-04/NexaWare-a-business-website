@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NexaWare</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+  <h1>NexaWare</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#overview">About</a>
+    <a onclick="openLogin()">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Access NexaWare Platform</h2>
+    <p>
+      Login or create a new account to explore our intelligent digital services
+      and manage your NexaWare experience.
+    </p>
+
+    <div class="btn-group">
+      <button onclick="openLogin()">Login</button>
+      <button onclick="openRegister()">Register</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b" alt="Login">
+  </div>
+</section>
+
+<div id="toast" class="toast"></div>
+
+<!-- LOGIN POPUP -->
+<div id="loginPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span class="close" onclick="closeLogin()">×</span>
+
+    <h3>Login</h3>
+
+    <input id="lemail" placeholder="Email">
+    <input id="lpassword" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- REGISTER POPUP -->
+<div id="registerPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span class="close" onclick="closeRegister()">×</span>
+
+    <h3>Create Account</h3>
+
+    <input id="rname" placeholder="Name">
+    <input id="remail" placeholder="Email">
+    <input id="rpassword" type="password" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+  </div>
+</div>
+
+<!-- NEW PROFESSIONAL SERVICES SECTION -->
+<section id="services" class="services-section">
+
+  <div class="services-container">
+
+    <h1 class="services-title">Our Professional Services</h1>
+
+    <p class="services-sub">
+      Smart digital solutions designed for modern business growth
+    </p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Trusted Expertise</h3>
+        <p>
+          Industry-driven solutions built by experienced professionals
+          with proven success records.
+        </p>
+        <a href="services.html">Explore →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Innovative Technology</h3>
+        <p>
+          Modern tools and scalable platforms for secure and
+          long-term business growth.
+        </p>
+        <a href="services.html">Explore →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Client-Centric Approach</h3>
+        <p>
+          Focused on delivering measurable value and complete
+          customer satisfaction.
+        </p>
+        <a href="services.html">Explore →</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="overview" id="overview">
+  <h2>Why Choose NexaWare?</h2>
+  <p>
+    At NexaWare, we combine technical excellence with business insight to deliver solutions
+    that are reliable, secure, and future-ready. Our goal is to empower organizations
+    by simplifying technology and enhancing operational efficiency.
+  </p>
+</section>
+
+
+<footer>
+  © 2026 NexaWare Solutions. All Rights Reserved.
+</footer>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
+
+
