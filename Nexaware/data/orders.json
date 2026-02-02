@@ -1,26 +1,3 @@
 [
-  {
-    "id": 1768885908944,
-    "email": "nivisjohnson0772@gmail.com",
-    "service": "Mobile App Development",
-    "duration": "5",
-    "people": "4",
-    "price": 10000
-  },
-  {
-    "id": 1768891205125,
-    "email": "jagadeshkumar0406@gmail.com",
-    "service": "Website Development",
-    "duration": "11",
-    "people": "12",
-    "price": 66000
-  },
-  {
-    "id": 1768891310323,
-    "email": "jagadeshkumar0406@gmail.com",
-    "service": "Website Development",
-    "duration": "12",
-    "people": "1",
-    "price": 6000
-  }
+  
 ]
